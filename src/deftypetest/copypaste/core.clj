@@ -1,8 +1,10 @@
 (ns deftypetest.copypaste.core
-  (:require 
-    [deftypetest.copypaste.repository :refer :all]
-    [deftypetest.copypaste.mongo :refer [mongo-repository mongo-db]]
-    ))
+  (:require
+    [deftypetest.copypaste.hardcore :refer :all]
+    )
+  (:gen-class)
+  )
 
-(def chatbox-sessions-storage (mongo-repository mongo-db "some_table"))
-(index chatbox-sessions-storage [:smth] :unique)
+(defn -main [& args]
+  (println "Hello " (sfn "10"))
+  )
